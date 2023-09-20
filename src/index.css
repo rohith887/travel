@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+:root{
+    --primary-dark:#5651e5;
+    --primary-light:#709dff;
+}
+.icon{
+    color: var(--primary-dark);
+}
+
+@layer base{
+    body{
+        @apply font-[Poppins]
+    }
+    li{
+        @apply px-8 text-xl cursor-pointer
+    }
+    h1{
+        @apply text-3xl md:text-4xl font-bold
+    }
+    h2{
+        @apply text-3xl font-bold
+    }
+    h3{
+        @apply text-xl font-bold
+    }
+    button{
+        @apply  p-3 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white rounded-md;
+    }
+    icon{
+        @apply text-2xl cursor-pointer
+    }
+
+
+}
